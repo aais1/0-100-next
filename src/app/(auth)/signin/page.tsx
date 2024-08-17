@@ -36,6 +36,7 @@ export default function SignInPage() {
       }
       setError('');
       setLoading(false);
+      alert('Logged In')//to be replaced
     } catch (error) {
       setError('Failed to login');
       setLoading(false);

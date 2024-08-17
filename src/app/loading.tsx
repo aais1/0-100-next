@@ -1,7 +1,7 @@
 "use client"
-
+import Loader from "@/components/Loader"
 export default function LoadingPage() {
   return (
-    <div>Loading..</div>
+    <Loader/>
   )
 }
