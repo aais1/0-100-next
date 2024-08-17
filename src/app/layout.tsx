@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/header";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Youtube Downloader",
-  description: "Download any youtube video for free",
+  title: "Next 0-100",
+  description: "Next from zero to Hero",
 };
 
 export default function RootLayout({
@@ -17,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+       <Header/>
         {children}
       </body>
     </html>
